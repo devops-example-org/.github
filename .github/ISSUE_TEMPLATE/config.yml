@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: DevOps Examples Support
+    url: https://github.com/orgs/community/discussions
+    about: Please ask and answer questions here.
+  - name: Another Valuable Address
+    url: https://github.com
+    about: Please ask and answer questions here.
