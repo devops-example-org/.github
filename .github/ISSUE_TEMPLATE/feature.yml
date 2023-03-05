@@ -26,7 +26,7 @@ body:
     attributes:
       label: 🔦 Context
       placeholder: How has this issue affected you? What are you trying to accomplish?
-  - type: input
+  - type: textarea
     id: id-example
     attributes:
       label: 💻 Examples
