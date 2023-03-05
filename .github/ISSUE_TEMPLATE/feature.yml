@@ -1,0 +1,38 @@
+name: Bug report
+description: Template for bug reports
+title: 🙋 [Feature Request:] Provide a general summary of the issue here
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: id-expected-behavior
+    attributes:
+      label: 🤔 Expected Behavior
+      placeholder: Tell us how the feature should work
+  - type: textarea
+    id: id-current-behavior
+    attributes:
+      label: 😯 Current Behavior
+      placeholder: Explain the difference from current behavior
+  - type: textarea
+    id: id-possible-solution
+    attributes:
+      label: 💁 Possible Solution
+      placeholder: >-
+        Ideas how to implement this feature or a similar solution/workaround
+        that already exists
+  - type: textarea
+    id: id-context
+    attributes:
+      label: 🔦 Context
+      placeholder: How has this issue affected you? What are you trying to accomplish?
+  - type: input
+    id: id-example
+    attributes:
+      label: 💻 Examples
+      placeholder: Examples help us understand the requested feature better
+  - type: markdown
+    attributes:
+      value: >-
+        This template was generated with [Issue Forms
+        Creator](https://issue-forms-creator.netlify.app)
