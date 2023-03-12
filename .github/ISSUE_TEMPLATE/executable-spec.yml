@@ -1,0 +1,32 @@
+name: Executable Spec (Gherkin)
+description: 🙋 New Feature Provide a general summary of the issue here
+title: '🙋 New Feature: Provide a general summary of the issue here'
+body:
+  - type: input
+    attributes:
+      label: 'Feature:'
+  - type: checkboxes
+    attributes:
+      label: 'Has Background:'
+      options:
+        - label: 'Has Background:'
+          required: false
+  - type: input
+    attributes:
+      label: 'Scenario:'
+  - type: input
+    attributes:
+      label: Given
+  - type: input
+    attributes:
+      label: And
+      placeholder: And
+  - type: array
+    id: reproducible-examples
+    attributes:
+      label: Reproducible Examples
+    item:
+      type: textarea
+      attributes:
+        label: Example
+        required: true
