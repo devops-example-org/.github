@@ -7,10 +7,9 @@ body:
       label: 'Feature:'
   - type: checkboxes
     attributes:
-      label: 'Has Background:'
+      label: 'Background:'
       options:
-        - label: 'Has Background:'
-          required: false
+        - label: 'Has Background'
   - type: input
     attributes:
       label: 'Scenario:'
@@ -21,12 +20,27 @@ body:
     attributes:
       label: And
       placeholder: And
-  - type: array
-    id: reproducible-examples
-    attributes:
-      label: Reproducible Examples
-    item:
-      type: textarea
-      attributes:
-        label: Example
-        required: true
+  - type: select
+        id: example-count
+        attributes:
+          label: How many reproducible examples do you have?
+          required: true
+        options:
+          - value: "1"
+            label: "1"
+          - value: "2"
+            label: "2"
+          - value: "3"
+            label: "3"
+
+{% for i in (1..3) %}
+      - type: textarea
+        id: example{{ i }}
+        attributes:
+          label: Example {{ i }}
+          required: true
+        conditional:
+          equals:
+            field: example-count
+            value: "{{ i }}"
+{% endfor %}
