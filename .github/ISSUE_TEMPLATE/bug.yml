@@ -2,7 +2,6 @@ name: 🐞 Bug Report Form
 description: File a bug report
 title: "🐞 Bug: "
 labels: ["bugfix"]
-assignees:  
 body:
   - type: markdown
     attributes:
